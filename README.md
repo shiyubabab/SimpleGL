@@ -9,19 +9,16 @@
 以下是运行示例程序后，在 `./output/` 目录下生成的 PPM 格式画布图像（为了在网页上获得最佳兼容性，推荐将其转换为 PNG/JPG 查看）：
 
 ### 1. 基础矩形绘制 (`rect_ex.ppm`)
-展示了画布的填充以及居中矩形的快速渲染算法。
-![基础矩形效果](./output/rect_ex.ppm)
+![基础矩形效果](./output/rect_ex.png)
 *文件路径: `./output/rect_ex.ppm`*
 
-### 2. 整齐排列的圆矩阵 (`circle_matrix.ppm`)
-展示了修正行列步长、对齐圆心后的完美整齐排列效果。
-![整齐排列的圆](./output/circle_matrix.ppm)
-*文件路径: `./output/circle_matrix.ppm`*
+### 2. 斜向渐变放大圆 (`circle_ex.ppm`)
+![基础圆形效果](./output/circle_ex.png)
+*文件路径: `./output/circle_ex.ppm`*
 
-### 3. 斜向渐变放大圆 (`circle_gradient.ppm`)
-应用了自定义线性插值宏 `LERP(a, b, p)`，让圆的半径从左上角到右下角根据坐标进度 $p$ 逐渐丝滑放大。
-![渐变放大圆效果](./output/circle_gradient.ppm)
-*文件路径: `./output/circle_gradient.ppm`*
+### 3. 斜向渐变放大圆 (`line_ex.ppm`)
+![基础直线效果](./output/line_ex.png)
+*文件路径: `./output/line_ex.ppm`*
 
 ---
 
