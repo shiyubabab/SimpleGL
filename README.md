@@ -10,14 +10,20 @@
 
 ### 1. 基础矩形绘制 (`rect_ex.ppm`)
 ![基础矩形效果](./output/rect_ex.png)
+
+
 *文件路径: `./output/rect_ex.ppm`*
 
-### 2. 斜向渐变放大圆 (`circle_ex.ppm`)
+### 2. 基础圆形绘制 (`circle_ex.ppm`)
 ![基础圆形效果](./output/circle_ex.png)
+
+
 *文件路径: `./output/circle_ex.ppm`*
 
-### 3. 斜向渐变放大圆 (`line_ex.ppm`)
+### 3. 基础直线绘制 (`line_ex.ppm`)
 ![基础直线效果](./output/line_ex.png)
+
+
 *文件路径: `./output/line_ex.ppm`*
 
 ---
