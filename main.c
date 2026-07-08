@@ -57,5 +57,19 @@ int main(void)
 	sgl_canvas_export_ppm(canvas,"./output/line_ex.ppm");
 #endif
 
+#ifdef TEST_TRIANGLE
+	sgl_fill_triangle(canvas,WIDTH/2,0,0,HEIGHT/2,WIDTH,HEIGHT,0xFF0000FF);
+	sgl_canvas_export_ppm(canvas,"./output/triangle_ex.ppm");
+#endif
+
+
+#ifdef TEST_ALPHA
+	sgl_rect(canvas,0,0,WIDTH*3/4,HEIGHT*3/4,0xFF0000FF);
+	sgl_rect(canvas,WIDTH*1/4,HEIGHT*1/4,WIDTH-1,HEIGHT-1,0x00FF00AA);
+	sgl_circle(canvas,WIDTH/2,HEIGHT/2,WIDTH*1/4,0x0000FF20);
+	sgl_fill_triangle(canvas,WIDTH/2,0,0,HEIGHT/2,WIDTH,HEIGHT,0x00505520);
+	sgl_canvas_export_ppm(canvas,"./output/alpha_ex.ppm");
+#endif
+
 	return 0;
 }
