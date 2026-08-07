@@ -44,10 +44,7 @@ typedef struct {
 
 void sgl_canvas_export_ppm(const SGL_Canvas canvas, const char * filename);
 
-#endif // SGL_DRAW_H
 
-#if defined(SGL_DRAW_IMPLEMENTATION) && !defined(SGL_DRAW_IMPLEMENTATION_DOWN)
-#define SGL_DRAW_IMPLEMENTATION_DOWN
 
 SGLDEF SGL_Canvas sgl_canvas(uint32_t *pixels, size_t width, size_t height, size_t stride)
 {
@@ -265,7 +262,10 @@ SGLDEF void sgl_fill_triangle(SGL_Canvas canvas, int x1, int y1, int x2, int y2,
 	}
 }
 
+#endif // SGL_DRAW_H
 
+#if defined(SGL_DRAW_IMPLEMENTATION) && !defined(SGL_DRAW_IMPLEMENTATION_DOWN)
+#define SGL_DRAW_IMPLEMENTATION_DOWN
 void sgl_canvas_export_ppm(const SGL_Canvas canvas, const char * filename)
 {
 	if(canvas.pixels == NULL || filename == NULL){
